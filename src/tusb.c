@@ -115,7 +115,7 @@ void tu_print_mem(void const *buf, uint16_t count, uint8_t indent)
       for(uint8_t s=0; s < indent; s++) tu_printf(" ");
 
       // print offset or absolute address
-      tu_printf("%03lX: ", 16*i/item_per_line);
+      tu_printf("%03X: ", 16*i/item_per_line);
     }
 
     memcpy(&value, buf8, size);
